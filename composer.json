@@ -1,0 +1,36 @@
+{
+    "name": "ngomory/flasher",
+    "type": "library",
+    "description": "PHP package to show toasts flash notification",
+    "keywords": [
+        "ngomory",
+        "flasher"
+    ],
+    "homepage": "https://github.com/ngomory/flasher",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ngomory Touré",
+            "email": "info@ngomory.ci",
+            "homepage": "https://ngomory.ci",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10",
+        "symfony/var-dumper": "5.4.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ngomory\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

@@ -5,7 +5,7 @@ namespace Ngomory;
 class Flasher
 {
 
-    static $msgFlash = 'Flasher26523365';
+    static $msgFlash = 'Flasherf11e0a91ee44';
 
     static function danger(string $msg, string $title = 'Notification', string $position = 'top-right')
     {
@@ -35,6 +35,11 @@ class Flasher
             'msg' => $msg,
             'position' => $position
         ]);
+    }
+
+    static function getDatas(): array
+    {
+        return session(self::$msgFlash);
     }
 
     static function assetCss($template)

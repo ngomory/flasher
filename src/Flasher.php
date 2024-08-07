@@ -37,7 +37,7 @@ class Flasher
         ]);
     }
 
-    static function getDatas(string $key = ''): array
+    static function getDatas(string $key = '')
     {
         $key = (in_array($key, ['type', 'title', 'msg', 'position'])) ? '.' . $key : '';
         return session(self::$msgFlash . $key);
